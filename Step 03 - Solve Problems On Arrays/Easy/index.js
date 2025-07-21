@@ -6,8 +6,8 @@ import random from "random";
 const path = "./data.json";
 
 // Set specific commit range here
-const startDate = moment("2025-02-01", "YYYY-MM-DD");
-const endDate = moment("2025-03-31", "YYYY-MM-DD");
+const startDate = moment("2024-07-01", "YYYY-MM-DD");
+const endDate = moment("2024-08-17", "YYYY-MM-DD");
 const totalDays = endDate.diff(startDate, 'days');
 
 const getRandomDateInRange = () => {
@@ -28,4 +28,4 @@ const makeCommits = (n) => {
   });
 };
 
-makeCommits(200); // Change number of commits here
+makeCommits(600); // Change number of commits here
